@@ -1,7 +1,8 @@
 # Visma Partner Summit 2015
 
-Eksempelkode for Visma.Net Integration. Kildekoden er lisensiert under MIT License, noe som 
-betyr at du kan bruke den til akkurat hva du vil, så lenge du aksepterer lisensen.
+Dette er koden som ble demonstrert under sesjonen Visma.Net Integration på Visma Partner Summit 2015. Kildekoden er lisensiert under MIT License, noe som betyr at du kan bruke den til akkurat hva du vil så lenge du aksepterer lisensen.
+
+Om du er litt usikker på hvordan du bruker git kan du laste ned prosjektet som en [zipfil](https://github.com/ON-IT/VismaSummit2015/archive/master.zip). Du kan også velge **Clone in desktop** på høyre side og laste ned Github for Windows eller Mac.
 
 ## Lisens
 
