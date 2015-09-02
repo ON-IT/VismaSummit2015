@@ -61,11 +61,8 @@ namespace VismaSummitDemo2015
                 password = Helpers.RequestInput("password", Helpers.GetMaskedPassword)
             };
             var client = CreateRestClient();
-            var request = new RestRequest(Controllers.Token, Method.POST)
-            {
-                RequestFormat = DataFormat.Json
-            };
-            request.AddBody(userdata);
+            var request = new RestRequest(Controllers.Token, Method.POST);
+            request.AddJsonBody(userdata);
             var response = client.Execute<Dictionary<string, string>>(request);
             if (response.Data.ContainsKey("token"))
             {
@@ -103,11 +100,8 @@ namespace VismaSummitDemo2015
         public static void CreateCustomer()
         {
             var client = CreateRestClient();
-            var request = new RestRequest(Controllers.Customer, Method.POST)
-            {
-                RequestFormat = DataFormat.Json
-            };
-            request.AddBody(new
+            var request = new RestRequest(Controllers.Customer, Method.POST);
+            request.AddJsonBody(new
             {
                 name = new DtoValue<string>(Helpers.RequestInput("Navn"))
             });
