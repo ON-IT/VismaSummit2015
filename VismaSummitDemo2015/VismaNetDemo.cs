@@ -78,6 +78,7 @@ namespace VismaSummitDemo2015
 
         public static void DownloadHelpFile()
         {
+            Console.WriteLine("Laster ned og åpner hjelpefilen");
             var client = CreateRestClient();
             var request = new RestRequest(Controllers.Help);
             var response = client.Execute(request);
@@ -88,6 +89,7 @@ namespace VismaSummitDemo2015
 
         public static void GetCustomers()
         {
+            Console.WriteLine("Henter alle registrerte kunder");
             var client = CreateRestClient();
             var request = new RestRequest(Controllers.Customer);
             var response = client.Execute<List<Customer>>(request);
@@ -121,6 +123,7 @@ namespace VismaSummitDemo2015
         {
             Token = null;
             CompanyId = null;
+            Console.WriteLine("Du er logget ut og må autentisere på nytt");
         }
     }
 
